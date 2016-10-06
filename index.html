@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--&#91;if lt IE 9&#93;>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<!&#91;endif&#93;-->
+<link rel="shortcut icon" href="">
+</head>
+<body>
+<!-- 効果音の読み込み -->
+<audio class="soundShutter" preload="auto"><source src="src/sound/shutter.mp3" type="audio/mp3"></audio>
+<audio class="soundBgm" preload="auto"><source src="src/sound/bgm.mp3" type="audio/mp3"></audio>
+<audio class="soundCheer" preload="auto"><source src="src/sound/cheer.mp3" type="audio/mp3"></audio>
+<audio class="soundClick" preload="auto"><source src="src/sound/click.mp3" type="audio/mp3"></audio>
+<audio class="soundRing" preload="auto"><source src="src/sound/ring.mp3" type="audio/mp3"></audio>
+
+<div class="fullheight">
+    <div class="wrapper">
+        <h1>🚨発表者決定スロット🚨</h1>
+        <div class="member window clearfix">
+            <p>参加者を選択してください</p>
+            <div class="member__choicesBox clear-box">
+                <!-- メンバー一覧 -->
+            </div>
+        </div>
+
+        <div class="slot window clearfix">
+            <span class="slot__text slot__text--side">次の発表者は</span>
+            <div class="slot__text slot__display">
+                <div class="slot__shutter slot__shutter--top"></div>
+                <div class="slot__shutter slot__shutter--bottom"></div>
+                <div class="slot__speaker">hoge</div>
+            </div>
+            <span class="slot__text slot__text--side">さんです。</span>
+        </div>
+        <button class="myButton startSlotBtn" type="button" name="button">スロット開始</button>
+    </div>
+
+</div>
+<!-- SCRIPTS -->
+<script type="text/javascript" src="lib/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="lib/js/jquery.transform2d.js"></script>
+<script type="text/javascript" src="lib/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="lib/js/jquery.jrumble.1.3.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
